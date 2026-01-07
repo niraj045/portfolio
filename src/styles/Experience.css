@@ -1,0 +1,74 @@
+.experience {
+    background: var(--bg-primary);
+}
+
+.experience-card {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--spacing-lg);
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.company-name {
+    color: var(--accent-cyan);
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-xs);
+}
+
+.job-title {
+    font-size: var(--font-size-md);
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.experience-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: var(--spacing-xs);
+}
+
+.location,
+.duration {
+    color: var(--text-muted);
+    font-size: var(--font-size-sm);
+}
+
+.responsibilities {
+    list-style: none;
+    padding: 0;
+}
+
+.responsibilities li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.responsibilities li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--accent-cyan);
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    .experience-header {
+        flex-direction: column;
+    }
+
+    .experience-meta {
+        align-items: flex-start;
+    }
+}

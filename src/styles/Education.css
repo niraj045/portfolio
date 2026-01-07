@@ -1,0 +1,55 @@
+.education {
+    background: var(--bg-secondary);
+}
+
+.education-card {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.education-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.degree {
+    font-size: var(--font-size-xl);
+    color: var(--accent-cyan);
+}
+
+.gpa {
+    background: rgba(0, 242, 254, 0.2);
+    border: 1px solid var(--accent-cyan);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    font-size: var(--font-size-md);
+    color: var(--accent-cyan);
+}
+
+.university {
+    font-size: var(--font-size-md);
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.graduation {
+    color: var(--text-muted);
+    font-size: var(--font-size-sm);
+}
+
+@media (max-width: 768px) {
+    .education-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .education-card {
+        text-align: center;
+    }
+}

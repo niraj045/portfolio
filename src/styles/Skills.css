@@ -1,0 +1,103 @@
+.skills {
+    background: var(--bg-secondary);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+}
+
+/* Main category cards - full width */
+.skill-category:nth-child(1),
+/* Backend & Frameworks */
+.skill-category:nth-child(2)
+
+/* Frontend */
+    {
+    grid-column: span 1;
+}
+
+/* AI & ML Engineering - spans 2 rows */
+.skill-category:nth-child(3) {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+/* Smaller cards in 2x2 grid */
+.skill-category:nth-child(4),
+/* Automation & Testing */
+.skill-category:nth-child(5),
+/* Databases */
+.skill-category:nth-child(6),
+/* DevOps & Tools */
+.skill-category:nth-child(7)
+
+/* IDE & Utilities */
+    {
+    grid-column: span 1;
+}
+
+.skill-category {
+    padding: var(--spacing-md) var(--spacing-lg);
+}
+
+/* Reduce padding for the 4 smaller cards */
+.skill-category:nth-child(4),
+.skill-category:nth-child(5),
+.skill-category:nth-child(6),
+.skill-category:nth-child(7) {
+    padding: var(--spacing-sm) var(--spacing-md);
+}
+
+.category-title {
+    font-size: var(--font-size-md);
+    color: var(--accent-cyan);
+    margin-bottom: var(--spacing-sm);
+    font-weight: 600;
+}
+
+/* Smaller title for compact cards */
+.skill-category:nth-child(4) .category-title,
+.skill-category:nth-child(5) .category-title,
+.skill-category:nth-child(6) .category-title,
+.skill-category:nth-child(7) .category-title {
+    font-size: var(--font-size-sm);
+    margin-bottom: 0.5rem;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+}
+
+.skill-tag {
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Reset all cards to single column on mobile */
+    .skill-category:nth-child(3) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .skill-category:nth-child(4),
+    .skill-category:nth-child(5),
+    .skill-category:nth-child(6),
+    .skill-category:nth-child(7) {
+        padding: var(--spacing-md) var(--spacing-lg);
+    }
+
+    .skill-category:nth-child(4) .category-title,
+    .skill-category:nth-child(5) .category-title,
+    .skill-category:nth-child(6) .category-title,
+    .skill-category:nth-child(7) .category-title {
+        font-size: var(--font-size-md);
+    }
+}
