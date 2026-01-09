@@ -189,7 +189,7 @@ This project is open source. Add a LICENSE file to the repo and update this sect
 
 - GitHub: [niraj045](https://github.com/niraj045)
 - Deployed: https://niraj-portfolio-io.netlify.app/
-- Email: your-email@example.com (replace with your preferred contact)
+- Email: infinityniraj@gmail.com (replace with your preferred contact)
 
 ---
 
